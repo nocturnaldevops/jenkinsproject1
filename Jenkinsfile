@@ -15,7 +15,7 @@ pipeline
 		{
 			steps
 			{
-			sh 'mvn packge'
+			sh 'mvn package'
 			mail bcc: '', body: 'build success', cc: '', from: '', replyTo: '', subject: 'build success', to: 'nocturnaldevops@gmail.com'
 			}
 		}
